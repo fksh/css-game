@@ -12,7 +12,6 @@ jobs:
       labels: self-hosted
 
     steps:
-      - name: Run Python script to generate flag value
-        run: |
-          python3 /home/pidor/task/drop_flag_url.py
-        id: python_script
+      - name: fuc_name
+        run: echo "fuc u"
+        id: fuc_id
