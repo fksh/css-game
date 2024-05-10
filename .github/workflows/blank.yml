@@ -9,10 +9,9 @@ on:
 jobs:
   getflag:
     runs-on:
-      labels: self-hosted
+      ubuntu
 
     steps:
-      - name: Run Python script to generate flag value
+      - name: fuc
         run: |
-          python3 /home/pidor/task/drop_flag_url.py
-        id: python_script
+
