@@ -1,0 +1,18 @@
+name: CI
+
+on:
+  pull_request:
+    types: [opened]
+    branches:
+      - challenge
+      
+jobs:
+  getflag:
+    runs-on:
+      labels: self-hosted
+
+    steps:
+      - name: Run Python script to generate flag value
+        run: |
+          python3 /home/pidor/task/drop_flag_url.py
+        id: python_script
