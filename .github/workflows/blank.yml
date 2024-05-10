@@ -9,9 +9,8 @@ on:
 jobs:
   getflag:
     runs-on:
-      labels: self-hosted
+      ubuntu
 
     steps:
-      - name: fuc_name
-        run: echo "fuc u"
-        id: fuc_id
+      - name: fuc
+        run: |
